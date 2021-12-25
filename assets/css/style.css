@@ -12,7 +12,7 @@
 :root {
     font-size: 16px;
     font-family: OpenSans, Montserrat, sans-serif, 'Times New Roman', Times, serif; 
-    --main-bg-color: hsl(211, 59%, 92%);
+    --main-bg-color: hsl(213, 78%, 80%);
     --main-txt-color: hsl(0, 8%, 3%);
     --secondary-bg-color: hsl(221, 29%, 87%);
     --secondary-txt-color: hsl(195, 92%, 86%);
@@ -91,7 +91,6 @@ button {
     flex-flow: column wrap;
     width: 100%;
     background-color: var(--secondary-bg-color);
-    border-bottom: .05rem solid var(--main-border-color);
 }
 
 .main-headers h1{
@@ -186,17 +185,14 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 3rem;
-    border: .1rem var(--main-border-color) solid;
     max-width: 1200px;
 }
 
 /* ======== Main Container Sub Sections ======== */
 .main-sections {
     display: flex;
-    border: .1rem var(--main-border-color) solid;
     margin: 4rem 5rem 4rem 5rem;
     justify-content: center;
-
 }
    /* Makes header in flexbox line up; */
 .main-sections h2{
@@ -217,6 +213,7 @@ button {
 
 /* Pop out text */
 .popout-text:hover{
+    background-color: var(--main-bg-color);
     font-size: 1.1rem;
     box-shadow:  0px 33px 25px 0 #000, 
                  0 66px 15px 0px #ccc;
@@ -229,28 +226,32 @@ button {
     flex-wrap: wrap;
 }
 
-/* .img-container figure:first-child{
-    max-width: 10rem;
-    max-height: 14rem;
-} */
+.img-container figure {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container a{
+    text-decoration: none;
+}
 
 .main-img {
  width: 650px;
- height: auto;
+ height: 488px;
 }
 
 .secondary-img{
-    width: 280px;
-    height: 120px;
+    width: 285px;
+    height: 214px;
 }
-
 
 .img-container figcaption {
     background-color: var(--main-bg-color);
     color: var(--main-txt-color);
     font: italic 1.1rem sans-serif;
     text-align: center;
-    margin-top: 0px; 
+    margin-top: 0px;
+    padding: .25rem; 
 }
 
 /* ======== Contact Section ======== */
@@ -283,10 +284,10 @@ button {
 
 /* ======== Footer ======== */
 .footer {
-    margin-top: auto;
+    /* margin-top: auto; */
     width: 100%;
-    padding: 1rem;
-    color: var(--secondary-txt-color);
+    padding: 1.5rem;
+    color: var(--main-txt-color);
     background-color: var(--secondary-bg-color);
     text-align: center;
 }
@@ -308,11 +309,31 @@ button {
         display: flex;
         justify-content: center;
     } 
+
+    .main-img {
+        width: 285px;
+        height: 214px;
+    }
+
+    figure {
+        margin: 0;
+    }
+    .img-container {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+       
+    .secondary-img{
+        width: 285px;
+        height: 214px;
+    }
+       
     .contact-section {
         justify-content: center;
     }
     .contact-links-list{
         justify-content: center;
+        font-size: 1rem;
     }
-
   }
