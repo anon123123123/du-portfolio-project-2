@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSP for Good Security Hygiene  -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; object-src 'none'">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Vanta.js for animated BG -->
+    <!-- Vanta.js for Animated BG -->
     <script src="./assets/js/vanta/three.r119.min.js"></script>
     <script src="./assets/js/vanta/vanta.clouds.min.js"></script>
     <script src="./assets/js/vanta/vanta.net.min.js"></script>
     <title>Portfolio</title>
 </head>
 
-<body> <!-- Main Headers -->
+<body> 
+    <!-- Main Headers -->
     <header>
         <hgroup class="main-headers">
             <h1>Name McNamerson</h1>
@@ -58,7 +60,7 @@
                                 d="M12,18V6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,15.31L23.31,12L20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31Z" />
                         </svg>
                         </svg>
-                        <span class="link-text">Dark Mode</span>
+                        <span class="link-text" id="css-mode-txt">Dark Mode</span>
                     </button>
                 </li>
             </ul>
@@ -67,6 +69,7 @@
 <!-- Main Sections -->
     <main class="main vanta-bg">
         <section class="main-section-wrapper">
+            <!-- About Me Sections Text Content-->
             <section class="main-sections" id="about-me">
                 <header>
                     <h2>About Me</h2>
@@ -114,6 +117,7 @@
                     </p>
                 </article>
             </section>
+            <!-- Work Image Link Sections  -->
             <section class="main-sections" id="work">
                 <header>
                     <h2>My Work</h2>
@@ -130,11 +134,11 @@
                         <figcaption>Placeholder<br>React </figcaption>
                     </figure>
                     <figure>
-                        <img class="secondary-img" src="./assets/images/placeholder-img.png" alt="" />
+                        <img class="secondary-img" src="./assets/images/ibiza-285.jpeg" alt="Ibiza Spain" />
                         <figcaption>Placeholder<br>Node</figcaption>
                     </figure>
                     <figure>
-                        <img class="secondary-img" src="./assets/images/placeholder-img.png" alt="" />
+                        <img class="secondary-img" src="./assets/images/prague-285.jpeg" alt="Prague Czech Republic" />
                         <figcaption>Placeholder<br>Python</figcaption>
                     </figure>
                     <figure>
@@ -143,6 +147,7 @@
                     </figure>
                 </div>
             </section>
+            <!-- Contact Section -->
             <section class="main-sections contact-section" id="contact">
                 <header>
                     <h2>Contact Me</h2>
@@ -155,7 +160,7 @@
                 </ul>
             </section>
         </section>
-    </main>
+    </main><!-- Footer -->
     <footer class="footer">
         Footer
     </footer>
