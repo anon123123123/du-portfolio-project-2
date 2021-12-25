@@ -237,6 +237,12 @@ button {
     text-decoration: none;
 }
 
+.img-container .popout-text:hover{
+    box-shadow:  0px 33px 25px 0 #000, 
+                 0 26px 15px 0px #ccc;
+    padding: 0;
+}
+
 .main-img {
  width: 650px;
  height: 488px;
@@ -298,6 +304,9 @@ button {
 @media only screen and (max-width: 950px) {
     .nav-link {
         width: 5rem;
+    }
+    .navbar:hover {
+        height: 8rem;
     }
     .main-sections {
         flex-direction: column;
