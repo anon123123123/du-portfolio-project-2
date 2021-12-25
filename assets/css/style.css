@@ -12,9 +12,9 @@
 :root {
     font-size: 16px;
     font-family: OpenSans, Montserrat, sans-serif, 'Times New Roman', Times, serif; 
-    --main-bg-color: hsl(198, 80%, 70%);
+    --main-bg-color: hsl(198, 83%, 63%);
     --main-txt-color: hsl(0, 8%, 3%);
-    --secondary-bg-color: hsl(221, 29%, 87%);
+    --secondary-bg-color: hsl(235, 99%, 64%);
     --secondary-txt-color: hsl(195, 92%, 86%);
     --main-border-color: hsl(215, 100%, 80%);
     --special-case-color: hsl(237, 43%, 81%);
@@ -297,7 +297,7 @@ button {
 /* Small Screen edits  */
 @media only screen and (max-width: 950px) {
     .nav-link {
-        width: 5amsterdarem;
+        width: 5rem;
     }
     .main-sections {
         flex-direction: column;
