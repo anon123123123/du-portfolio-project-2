@@ -126,6 +126,7 @@ button {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 3;
   }
 
 .nav-item {
@@ -174,6 +175,7 @@ button {
 .main {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-section-wrapper{
@@ -182,6 +184,7 @@ button {
     justify-content: center;
     margin-top: 3rem;
     max-width: 1200px;
+    margin-right: 0;
 }
 
 /* ======== Main Container Sub Sections ======== */
